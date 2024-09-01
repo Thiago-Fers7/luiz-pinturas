@@ -1,8 +1,9 @@
+import { SectionContainer } from "@/components/section-container";
 import Image from "next/image";
 
 export function About() {
   return (
-    <section className="mx-auto max-w-screen-xl px-5 py-10 lg:px-7">
+    <SectionContainer id="about">
       <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
         🎨 Sobre
       </h1>
@@ -68,6 +69,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

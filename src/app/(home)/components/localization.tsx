@@ -1,9 +1,10 @@
 import { Button } from "@/components/button";
+import { SectionContainer } from "@/components/section-container";
 import Image from "next/image";
 
 export function Localization() {
   return (
-    <section className="mx-auto max-w-screen-xl px-5 py-10 lg:px-7">
+    <SectionContainer id="localization">
       <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
         🎨 Áreas Atendidas
       </h1>
@@ -26,7 +27,7 @@ export function Localization() {
 
         <div className="flex-1 text-slate-600">
           <h2 className="text-lg font-semibold text-slate-900">
-            Areas atendidas
+            Áreas atendidas
           </h2>
 
           <ul className="mt-2 max-w-md list-inside list-disc space-y-1">
@@ -65,6 +66,6 @@ export function Localization() {
           </p>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

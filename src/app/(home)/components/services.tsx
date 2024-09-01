@@ -1,3 +1,4 @@
+import { SectionContainer } from "@/components/section-container";
 import Image from "next/image";
 
 const services = [
@@ -67,27 +68,12 @@ const services = [
     image: "/images/grafiato-textura.jpg",
     alt: "Grafiato e textura",
   },
-  {
-    id: 7,
-    title: "Pintura Epóxi",
-    descriptions: [
-      "Pintura de pisos de garagem e áreas industriais.",
-      "Acabamento resistente e durável.",
-      "Impermeabilização e proteção de superfícies.",
-      "Ideal para garagens, cozinhas industriais e áreas que exigem durabilidade",
-    ],
-    image: "/images/pintura-epoxi.webp",
-    alt: "Pintura epóxi",
-  },
 ];
 
 export function Services() {
   return (
     <div className="bg-sky-50">
-      <section
-        id="services"
-        className="mx-auto w-full max-w-screen-xl px-5 py-10 sm:mt-24 lg:mt-32"
-      >
+      <SectionContainer id="services" className="sm:mt-24 lg:mt-32">
         <div className="pb-6">
           <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
             Serviços
@@ -136,7 +122,7 @@ export function Services() {
             </div>
           ))}
         </div>
-      </section>
+      </SectionContainer>
     </div>
   );
 }
