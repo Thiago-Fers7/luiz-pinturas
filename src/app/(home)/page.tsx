@@ -2,6 +2,7 @@ import { Button } from "@/components/button";
 import { Header } from "@/components/header";
 import { Services } from "./components/services";
 import { About } from "./components/about";
+import { Localization } from "./components/localization";
 
 export default function Home() {
   return (
@@ -50,6 +51,8 @@ export default function Home() {
         <Services />
 
         <About />
+
+        <Localization />
 
         <section className="mb-72" />
       </main>
