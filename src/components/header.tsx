@@ -3,15 +3,15 @@ import { Button } from "./button";
 
 export function Header() {
   return (
-    <header className="max-w-screen-2xl mx-auto py-6 lg:py-8 px-5 lg:px-7 flex items-center justify-between gap-5">
+    <header className="mx-auto flex max-w-screen-2xl items-center justify-between gap-5 px-5 py-6 lg:px-7 lg:py-8">
       <div className="flex items-center">
-        <strong className="text-2xl font-bold text-slate-800 text-nowrap">
+        <strong className="text-nowrap text-2xl font-bold text-slate-800">
           Luiz Pinturas
         </strong>
       </div>
 
-      <nav className="flex flex-1 items-center justify-between text-slate-700 font-semibold text-sm leading-6">
-        <ul className="flex items-center gap-x-8 justify-end w-full">
+      <nav className="flex flex-1 items-center justify-between text-sm font-semibold leading-6 text-slate-700">
+        <ul className="flex w-full items-center justify-end gap-x-8">
           <li>
             <Link href="#services" className="hover:text-sky-500">
               Início
@@ -30,7 +30,7 @@ export function Header() {
         </ul>
       </nav>
 
-      <div className="border-slate-200 border-l ml-6 pl-6">
+      <div className="ml-6 border-l border-slate-200 pl-6">
         <Button type="button" size="md" enphasis="high" className="text-nowrap">
           Simular Orçamento
         </Button>

@@ -14,7 +14,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -68,13 +69,14 @@
     "import/no-default-export": "error",
     "import/no-cycle": "off",
     "no-nested-ternary": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "react/no-unescaped-entities": "off"
   },
   "overrides": [
     {
       "files": [
         "src/app/**/*",
-        "/tailwind.config.js"
+        "./tailwind.config.js"
       ],
       "rules": {
         "import/no-default-export": "off"
