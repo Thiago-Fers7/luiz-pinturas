@@ -51,7 +51,9 @@ export default function Home() {
 
         <About />
 
-        <section className="mb-72"></section>
+        <Localization />
+
+        <section className="mb-72" />
       </main>
     </>
   );
