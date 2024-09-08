@@ -1,4 +1,5 @@
 import { SectionContainer } from "@/components/section-container";
+import { SectionTitle } from "@/components/section-title";
 import Image from "next/image";
 
 const services = [
@@ -75,9 +76,7 @@ export function Services() {
     <div className="bg-sky-50">
       <SectionContainer id="services" className="sm:mt-24 lg:mt-32">
         <div className="pb-6">
-          <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
-            Serviços
-          </h1>
+          <SectionTitle>Serviços</SectionTitle>
 
           <p className="mt-2 max-w-3xl  text-slate-500">
             Transforme seu ambiente com nossos serviços de pintura! Oferecemos
@@ -92,7 +91,7 @@ export function Services() {
 
         <div className="flex flex-wrap justify-center gap-10">
           {services.map((service) => (
-            <div key={service.id} className="w-[386px]">
+            <div key={service.id} className="w-[381px]">
               <div className="h-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow">
                 <Image
                   src={service.image}

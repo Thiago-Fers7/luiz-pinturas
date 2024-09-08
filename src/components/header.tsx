@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
 import { Button } from "./button";
 
 export function Header() {
@@ -10,30 +11,37 @@ export function Header() {
         </strong>
       </div>
 
-      <nav className="flex flex-1 items-center justify-between text-sm font-semibold leading-6 text-slate-700">
-        <ul className="flex w-full items-center justify-end gap-x-8">
-          <li>
-            <Link href="#services" className="hover:text-sky-500">
-              Início
-            </Link>
-          </li>
-          <li>
-            <Link href="/#" className="hover:text-sky-500">
-              Serviços
-            </Link>
-          </li>
-          <li>
-            <Link href="/#" className="hover:text-sky-500">
-              Contato
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="flex items-center">
+        <nav className="flex flex-1 items-center justify-between text-sm font-semibold leading-6 text-slate-700">
+          <ul className="flex w-full items-center justify-end gap-x-8">
+            <li>
+              <Link href="/#services" className="hover:text-sky-500">
+                Serviços
+              </Link>
+            </li>
+            <li>
+              <Link href="/#localization" className="hover:text-sky-500">
+                Localização
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-      <div className="ml-6 border-l border-slate-200 pl-6">
-        <Button type="button" size="md" enphasis="high" className="text-nowrap">
-          Simular Orçamento
-        </Button>
+        <div className="ml-6 border-l border-slate-200 pl-6">
+          <Link href="https://wa.me/5511995861460" target="_blank">
+            <Button
+              type="button"
+              size="md"
+              enphasis="high"
+              className="text-nowrap"
+            >
+              <span className="flex items-center gap-2">
+                Entre em contato
+                <WhatsAppIcon width="0.875rem" height="0.875rem" />
+              </span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </header>
   );

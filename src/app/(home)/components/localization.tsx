@@ -1,13 +1,13 @@
+import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
 import { Button } from "@/components/button";
 import { SectionContainer } from "@/components/section-container";
+import { SectionTitle } from "@/components/section-title";
 import Image from "next/image";
 
 export function Localization() {
   return (
     <SectionContainer id="localization">
-      <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
-        🎨 Áreas Atendidas
-      </h1>
+      <SectionTitle>Localização</SectionTitle>
 
       <p className="mb-1 mt-2 text-slate-500">
         Atendemos em diversas regiões, principalmente em Mairiporã e Atibaia.
@@ -50,16 +50,14 @@ export function Localization() {
             sobre a disponibilidade de atendimento.
           </p>
 
-          <Button
-            type="button"
-            size="lg"
-            enphasis="high"
-            className="mb-4 text-nowrap"
-          >
-            Entrar em contato
+          <Button type="button" size="lg" enphasis="high">
+            <span className="flex items-center gap-2">
+              Entre em contato
+              <WhatsAppIcon width="1rem" height="1rem" />
+            </span>
           </Button>
 
-          <p className="mt-auto">
+          <p className="mt-4">
             Nosso objetivo é levar a nossa expertise em pintura para o maior
             número de pessoas possível, transformando ambientes e criando
             espaços que refletem a personalidade e o estilo de cada cliente.
