@@ -1,12 +1,11 @@
 import { SectionContainer } from "@/components/section-container";
+import { SectionTitle } from "@/components/section-title";
 import Image from "next/image";
 
 export function About() {
   return (
     <SectionContainer id="about">
-      <h1 className="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl">
-        🎨 Sobre
-      </h1>
+      <SectionTitle>Sobre</SectionTitle>
 
       <div className="flex w-full flex-col gap-10 md:flex-row">
         <div className="w-full space-y-2 text-slate-600 md:w-2/3">
@@ -36,8 +35,6 @@ export function About() {
             transformar seu espaço em um lugar que realmente reflete quem você
             é.
           </p>
-
-          {/* <strong className="text-4xl">fazer animação de rolo para os títulos das seções</strong> */}
         </div>
 
         <div className="flex-1">

@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, ReactNode } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
 
@@ -25,7 +25,7 @@ const button = tv({
 type ButtonVariantProps = VariantProps<typeof button>;
 
 type ButtonProps = {
-  children: string;
+  children: ReactNode;
 } & ComponentProps<"button"> &
   ButtonVariantProps;
 
