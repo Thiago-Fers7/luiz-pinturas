@@ -3,6 +3,7 @@ import { Button } from "@/components/button";
 import { SectionContainer } from "@/components/section-container";
 import { SectionTitle } from "@/components/section-title";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Localization() {
   return (
@@ -50,12 +51,14 @@ export function Localization() {
             sobre a disponibilidade de atendimento.
           </p>
 
-          <Button type="button" size="lg" enphasis="high">
-            <span className="flex items-center gap-2">
-              Entre em contato
-              <WhatsAppIcon width="1rem" height="1rem" />
-            </span>
-          </Button>
+          <Link href="https://wa.me/5511995861460" target="_blank">
+            <Button type="button" size="lg" enphasis="high">
+              <span className="flex items-center gap-2">
+                Entre em contato
+                <WhatsAppIcon width="1rem" height="1rem" />
+              </span>
+            </Button>
+          </Link>
 
           <p className="mt-4">
             Nosso objetivo é levar a nossa expertise em pintura para o maior

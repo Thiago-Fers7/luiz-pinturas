@@ -60,6 +60,7 @@
     "react/jsx-one-expression-per-line": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+    "react/prop-types": "off",
     "max-len": [
       "off",
       {

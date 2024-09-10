@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
-import { Button } from "./button";
+import { Button } from "../button";
+import { DropdownMenu } from "./dropdown-menu";
 
 export function Header() {
   return (
@@ -11,7 +12,11 @@ export function Header() {
         </strong>
       </div>
 
-      <div className="flex items-center">
+      <div className="grid place-items-center sm:hidden">
+        <DropdownMenu />
+      </div>
+
+      <div className="hidden items-center sm:flex">
         <nav className="flex flex-1 items-center justify-between text-sm font-semibold leading-6 text-slate-700">
           <ul className="flex w-full items-center justify-end gap-x-8">
             <li>

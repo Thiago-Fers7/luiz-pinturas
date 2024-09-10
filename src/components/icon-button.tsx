@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 const button = tv({
   base: [
-    "font-medium outline-1 outline-indigo-600 transition-colors duration-100 ease-out",
+    "outline-1 outline-indigo-600 transition-colors duration-100 ease-out",
   ],
   variants: {
     enphasis: {
@@ -13,12 +13,11 @@ const button = tv({
         "border text-slate-900 shadow-sm hover:bg-slate-100 active:bg-slate-200",
       low: "",
       lowest: "",
-      link: "hover:hover:text-sky-500",
     },
     size: {
-      md: "rounded-[4px] px-3 py-2 text-sm leading-4",
-      lg: "rounded-[4px] px-3 py-2 text-base",
-      xl: "rounded-lg px-6 py-4 text-base",
+      md: "h-8 rounded-[4px] px-1 text-sm leading-4",
+      lg: "h-10 rounded-[4px] px-1 text-base",
+      xl: "h-14 rounded-lg px-3 text-base",
     },
   },
 });
@@ -30,7 +29,7 @@ type ButtonProps = {
 } & ComponentProps<"button"> &
   ButtonVariantProps;
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const IconButton = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, size, enphasis, className, ...props }, ref) => {
     return (
       <button
