@@ -24,6 +24,20 @@ export const metadata: Metadata = {
   ],
   robots: "follow, index",
   creator: "Luiz Thiago",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://luiz-pinturas.vercel.app/",
+    siteName: "Luiz Pinturas",
+    images: [
+      {
+        url: "https://luiz-pinturas.vercel.app/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Luiz Pinturas",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
