@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     "serviços de pintura",
     "pintor profissional",
   ],
+  // <meta name="google-site-verification" content="S40hc2n4c208zzn0i6xxoMx7tl7Lc_3uuta6YjiFu6w" />
+  verification: {
+    google: "S40hc2n4c208zzn0i6xxoMx7tl7Lc_3uuta6YjiFu6w",
+  },
   robots: "follow, index",
   creator: "Luiz Thiago",
   openGraph: {
