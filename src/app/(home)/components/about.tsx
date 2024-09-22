@@ -11,31 +11,21 @@ export function About() {
         <div className="flex w-full flex-col gap-10 md:flex-row">
           <div className="w-full space-y-2 text-slate-600 md:w-2/3">
             <p className="mb-4 mt-2 font-bold">
-              "Comprometimento, Qualidade e Paixão por Detalhes"
+              "Comprometimento, Qualidade e Profissionalismo"
             </p>
 
             <p>
-              Nossa empresa é o reflexo do trabalho de um profissional dedicado,
-              apaixonado pela arte de transformar ambientes através da pintura.
-              Com anos de experiência no mercado, ofereço serviços
-              personalizados, garantindo que cada projeto receba o cuidado e a
-              atenção que merece.
+              Os serviços excelentes são o reflexo do trabalho de um
+              profissional dedicado, apaixonado pela arte de transformar
+              ambientes através da pintura. Com anos de experiência no mercado,
+              oferecendo serviços personalizados, garantindo que cada projeto
+              receba o cuidado e a atenção que merece.
             </p>
 
             <p>
-              Desde a escolha das cores até o acabamento final, estou presente
-              em cada etapa, assegurando que o resultado supere as expectativas.
-              Acredito que a confiança é construída através da transparência, do
-              diálogo aberto com o cliente e do compromisso com prazos e
-              qualidade. Cada parede, cada detalhe, é tratado com o máximo de
-              profissionalismo e carinho, porque sua satisfação é a minha
-              prioridade.
-            </p>
-
-            <p>
-              Aqui, você não encontra apenas um serviço, mas um parceiro para
-              transformar seu espaço em um lugar que realmente reflete quem você
-              é.
+              Acreditamos que a confiança é construída através da transparência,
+              do diálogo aberto com o cliente e do compromisso com prazos e
+              qualidade.
             </p>
           </div>
 

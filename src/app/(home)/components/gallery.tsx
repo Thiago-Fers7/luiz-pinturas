@@ -359,7 +359,8 @@ export function Gallery() {
                 Galeria de fotos
               </h2>
               <p className="mt-0 text-lg text-slate-600">
-                Todas as fotos são meramente ilustrativas.
+                Explore nossa galeria e veja os resultados dos nossos trabalhos
+                em diversos ambientes.
               </p>
 
               <div className="mt-4 block place-items-center md:grid">

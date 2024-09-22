@@ -83,9 +83,10 @@ export function Services() {
             desde a clássica pintura comum até técnicas sofisticadas como
             grafiato e texturas decorativas. Seja para renovar sua casa,
             escritório ou fachada, garantimos um acabamento impecável e
-            duradouro. Com opções que vão da pintura epóxi, ideal para garagens
-            e áreas industriais, até a pintura com verniz, que realça a beleza
-            da madeira. Escolha a cor, o estilo, e deixe o resto com a gente!
+            duradouro. Com opções que vão da textura projetada, ideal para
+            fachadas e ambientes externos, até a pintura com verniz, que realça
+            a beleza da madeira. Escolha a cor, o estilo, e deixe o resto com a
+            gente!
           </p>
         </div>
 
