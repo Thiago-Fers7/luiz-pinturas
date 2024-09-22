@@ -96,7 +96,7 @@ export function Services() {
                 <Image
                   src={service.image}
                   alt={service.alt}
-                  width={400}
+                  width={381}
                   height={200}
                   className="h-52 w-full object-cover"
                 />

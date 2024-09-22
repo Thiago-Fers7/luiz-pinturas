@@ -376,8 +376,8 @@ export function Gallery() {
                         <Image
                           src={image.path}
                           alt="Mountain"
-                          width={400}
-                          height={300}
+                          width={900}
+                          height={700}
                           quality={100}
                           className="size-full rounded-lg object-cover"
                         />
@@ -414,9 +414,9 @@ export function Gallery() {
                       <Image
                         src={image.path}
                         alt="Mountain"
-                        width={400}
-                        height={300}
-                        quality={100}
+                        width={144}
+                        height={109}
+                        quality={75}
                         className="pointer-events-none size-full select-none"
                       />
                     </Button>
