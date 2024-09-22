@@ -73,8 +73,8 @@ const services = [
 
 export function Services() {
   return (
-    <div className="bg-sky-50">
-      <SectionContainer id="services" className="sm:mt-24 lg:mt-32">
+    <div className="border-t-2 border-gray-100">
+      <SectionContainer id="services">
         <div className="pb-6">
           <SectionTitle>Serviços</SectionTitle>
 

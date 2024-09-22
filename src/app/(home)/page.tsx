@@ -1,10 +1,13 @@
 import { Button } from "@/components/button";
 import { Header } from "@/components/header";
 import Link from "next/link";
-import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
+import { WhatsAppIcon } from "@/assets/icons/whatsapp";
+import { Suspense } from "react";
 import { Services } from "./components/services";
 import { About } from "./components/about";
 import { Localization } from "./components/localization";
+import { Gallery } from "./components/gallery";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -16,12 +19,22 @@ export default function Home() {
       <main className="size-full pt-16 sm:pt-24 lg:pt-32">
         <section className="mx-auto max-w-screen-xl px-5 lg:px-7">
           <h1 className="animate-slidein300 text-center text-4xl font-extrabold tracking-tight text-slate-900 opacity-0 sm:text-5xl lg:text-6xl">
-            Transforme seu espaço com a nossa expertise em pintura!
+            Eleve o visual do seu espaço com nosso serviço especializado em
+            pintura!
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl animate-slidein500 text-center text-lg text-slate-600 opacity-0">
+          <h2 className="mx-auto mt-6 max-w-3xl animate-slidein500 text-center text-base text-slate-600 opacity-0 md:text-lg">
             Especialistas em pintura para casas, escritórios e ambientes
-            comerciais, garantindo um acabamento impecável.
+            comerciais, garantindo um acabamento impecável com preços acessíveis
+            e justos para todos os clientes.
+          </h2>
+
+          <strong className="mx-auto mt-6 block max-w-3xl animate-slidein500 text-center text-sm font-normal text-slate-500 opacity-0">
+            Mairiporã, Atibaia, Bragança Paulista e região.
+          </strong>
+
+          <p className="mx-auto max-w-3xl animate-slidein500 text-center text-sm font-normal text-slate-500 opacity-0">
+            Telefone: (11) 99586-1460
           </p>
 
           <div className="mt-10 flex animate-slidein700 justify-center gap-x-5 opacity-0">
@@ -52,18 +65,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mt-20 flex max-w-3xl animate-slidein700 flex-col-reverse items-center justify-center px-5 opacity-0 sm:mt-24 md:flex-row lg:mt-32">
-          <div className="h-44 w-11/12 -translate-y-9 rounded-md bg-red-400 bg-[url('/images/homem-pintando-parede.jpg')] bg-cover bg-center md:w-80 md:-translate-y-0 md:translate-x-9" />
-          <div className="h-80 w-full rounded-md bg-blue-200 bg-[url('/images/rolo-de-tinta-e-pinceis.jpg')] bg-cover bg-center md:size-96" />
-        </section>
-
+        <div className="animate-slidein700 opacity-0">
+          <Suspense>
+            <Gallery />
+          </Suspense>
+        </div>
         <Services />
 
         <Localization />
 
         <About />
 
-        <section className="mb-72" />
+        <Footer />
       </main>
     </>
   );

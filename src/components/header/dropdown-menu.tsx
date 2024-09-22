@@ -8,8 +8,8 @@ import {
   Portal,
 } from "@radix-ui/react-popover";
 import { useState } from "react";
-import { Hamburger } from "@/assets/icons/Hamburger";
-import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
+import { WhatsAppIcon } from "@/assets/icons/whatsapp";
+import { Hamburger } from "@/assets/icons/hamburger";
 import { IconButton } from "../icon-button";
 import { Button } from "../button";
 

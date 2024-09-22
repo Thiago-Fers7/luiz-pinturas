@@ -9,7 +9,21 @@ export const metadata: Metadata = {
     template: "%s | Luiz Pinturas",
     default: "Luiz Pinturas",
   },
-  description: "Luiz Pinturas",
+  description:
+    "Especialistas em pintura para casas, escritórios e ambientes comerciais em Atibaia, Mairiporã, Bragança Paulista e regiões próximas. Qualidade, preço acessível e acabamento impecável.",
+  keywords: [
+    "pintura",
+    "pintura residencial",
+    "pintura comercial",
+    "Atibaia",
+    "Mairiporã",
+    "Bragança Paulista",
+    "pintura de qualidade",
+    "serviços de pintura",
+    "pintor profissional",
+  ],
+  robots: "follow, index",
+  creator: "Luiz Thiago",
 };
 
 export default function RootLayout({

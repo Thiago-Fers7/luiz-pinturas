@@ -77,7 +77,8 @@
     {
       "files": [
         "src/app/**/*",
-        "./tailwind.config.ts"
+        "./tailwind.config.ts",
+        "./next.config.mjs"
       ],
       "rules": {
         "import/no-default-export": "off"

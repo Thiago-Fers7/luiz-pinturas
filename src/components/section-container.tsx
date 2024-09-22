@@ -13,7 +13,7 @@ export function SectionContainer({
   return (
     <section
       className={twMerge(
-        "w-full mx-auto max-w-screen-xl px-5 py-10 lg:px-7",
+        "w-full mx-auto max-w-screen-xl px-5 py-16 lg:px-7",
         className,
       )}
       {...props}

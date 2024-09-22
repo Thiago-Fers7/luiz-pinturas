@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { WhatsAppIcon } from "@/assets/icons/WhatsAppIcon";
+import { WhatsAppIcon } from "@/assets/icons/whatsapp";
 import { Button } from "../button";
 import { DropdownMenu } from "./dropdown-menu";
 

@@ -32,12 +32,21 @@ const config = {
             transform: "translateX(0)",
           },
         },
+        rotateGallery: {
+          from: {
+            transform: "perspective(1600px) rotateY(0deg)",
+          },
+          to: {
+            transform: "perspective(1600px) rotateY(360deg)",
+          },
+        },
       },
       animation: {
         slidein300: "slidein 1s ease 300ms forwards",
         slidein500: "slidein 1s ease 500ms forwards",
         slidein700: "slidein 1s ease 700ms forwards",
         slideright300: "slideright300 1s ease 100ms forwards",
+        rotateGallery: "rotateGallery 45s linear 700ms infinite",
       },
       borderRadius: {
         lg: "var(--radius)",
