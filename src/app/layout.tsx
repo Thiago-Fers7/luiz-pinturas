@@ -22,20 +22,19 @@ export const metadata: Metadata = {
     "serviços de pintura",
     "pintor profissional",
   ],
-  // <meta name="google-site-verification" content="S40hc2n4c208zzn0i6xxoMx7tl7Lc_3uuta6YjiFu6w" />
   verification: {
-    google: "S40hc2n4c208zzn0i6xxoMx7tl7Lc_3uuta6YjiFu6w",
+    google: "wOf6meZyecfWeeaaSNz2d_g3JibDKBh9cEXg310dQp4",
   },
   robots: "follow, index",
   creator: "Luiz Thiago",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://luiz-pinturas.vercel.app/",
+    url: "https://luiz-pinturas.netlify.app/",
     siteName: "Luiz Pinturas",
     images: [
       {
-        url: "https://luiz-pinturas.vercel.app/opengraph-image",
+        url: "https://luiz-pinturas.netlify.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Luiz Pinturas",

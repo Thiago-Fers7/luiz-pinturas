@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://luiz-pinturas.vercel.app/sitemap.xml",
+    sitemap: "https://luiz-pinturas.netlify.app/sitemap.xml",
   };
 }
