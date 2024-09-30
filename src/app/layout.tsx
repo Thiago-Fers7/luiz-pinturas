@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Luiz Pinturas",
     default: "Luiz Pinturas",
   },
+  metadataBase: new URL("https://luiz-pinturas.netlify.app/"),
   description:
     "Especialistas em pintura para casas, escritórios e ambientes comerciais em Atibaia, Mairiporã, Bragança Paulista e regiões próximas. Qualidade, preço acessível e acabamento impecável.",
   keywords: [
@@ -28,13 +29,9 @@ export const metadata: Metadata = {
   robots: "follow, index",
   creator: "Luiz Thiago",
   openGraph: {
-    type: "website",
-    locale: "pt_BR",
-    url: "https://luiz-pinturas.netlify.app/",
-    siteName: "Luiz Pinturas",
     images: [
       {
-        url: "https://luiz-pinturas.netlify.app/opengraph-image",
+        url: "https://luiz-pinturas.netlify.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Luiz Pinturas",

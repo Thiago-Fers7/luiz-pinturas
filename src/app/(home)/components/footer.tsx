@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="border-t-2 border-gray-100">
+    <footer className="border-t-2 border-gray-100">
       <SectionContainer className="divide-y divide-slate-200">
         <div className="flex">
           <div className="w-1/2 flex-none space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
@@ -59,11 +59,11 @@ export function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="mailto:luiz@email.com"
+                    href="mailto:joseluizfers7@gmail.com"
                     className="hover:text-sky-500"
                   >
                     <span className="flex items-center gap-2">
-                      luiz@email.com
+                      joseluizfers7@gmail.com
                       <PersonMail width="1.2rem" height="1.2rem" />
                     </span>
                   </Link>
@@ -94,7 +94,7 @@ export function Footer() {
           <div className="mt-4 text-slate-500">
             <p>
               &copy; {new Date().getFullYear()} Luiz Pinturas. Todos os direitos
-              reservados.
+              reservados - CNPJ: 42.823.604/0001-88
             </p>
           </div>
 
@@ -113,6 +113,6 @@ export function Footer() {
           </div>
         </div>
       </SectionContainer>
-    </div>
+    </footer>
   );
 }
