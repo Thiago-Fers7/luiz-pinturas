@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Luiz Pinturas",
     default: "Luiz Pinturas",
   },
-  metadataBase: new URL("https://luiz-pinturas.netlify.app/"),
+  metadataBase: new URL("https://www.luizpinturas.com/"),
   description:
     "Especialistas em pintura para casas, escritórios e ambientes comerciais em Atibaia, Mairiporã, Bragança Paulista e regiões próximas. Qualidade, preço acessível e acabamento impecável.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://luiz-pinturas.netlify.app/opengraph-image.png",
+        url: "https://www.luizpinturas.com/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Luiz Pinturas",

@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://luiz-pinturas.netlify.app/",
+      url: "https://www.luizpinturas.com/",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
