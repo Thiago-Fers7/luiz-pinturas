@@ -6,29 +6,37 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Luiz Pinturas",
-    default: "Luiz Pinturas",
+    template: "%s | Pintura Residencial em %s | Luiz Pinturas",
+    default: "Luiz Pinturas | Especialistas em Pintura Residencial",
   },
   metadataBase: new URL("https://www.luizpinturas.com/"),
   description:
-    "Especialistas em pintura para casas, escritórios e ambientes comerciais em Atibaia, Mairiporã, Bragança Paulista e regiões próximas. Qualidade, preço acessível e acabamento impecável.",
+    "Transforme sua casa ou empresa com os melhores serviços de pintura em Atibaia, Mairiporã e Bragança Paulista. Garantimos qualidade, preço justo e acabamento impecável. Solicite seu orçamento agora!",
   keywords: [
-    "pintura",
-    "pintura residencial",
-    "pintura comercial",
-    "Atibaia",
-    "Mairiporã",
-    "Bragança Paulista",
-    "pintura de qualidade",
-    "serviços de pintura",
-    "pintor profissional",
+    "pintura residencial em Atibaia",
+    "melhores pintores em Mairiporã",
+    "pintura comercial em Bragança Paulista",
+    "pintura de qualidade SP",
+    "acabamento impecável",
+    "pintor profissional Atibaia",
+    "pintura de interiores e exteriores",
+    "orçamento pintura Atibaia",
   ],
   verification: {
     google: "wOf6meZyecfWeeaaSNz2d_g3JibDKBh9cEXg310dQp4",
   },
-  robots: "follow, index",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
   creator: "Luiz Thiago",
   openGraph: {
+    type: "website",
+    title: "Luiz Pinturas | Transforme Seu Espaço com Qualidade",
+    description:
+      "Especialistas em pintura residencial e comercial. Serviços em Atibaia, Mairiporã, Bragança Paulista e região. Acabamento impecável, garantia de qualidade!",
+    url: "https://www.luizpinturas.com/",
     images: [
       {
         url: "https://www.luizpinturas.com/opengraph-image.png",
@@ -46,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-BR">
       <body className={inter.className}>{children}</body>
     </html>
   );
