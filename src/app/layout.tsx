@@ -48,6 +48,29 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Luiz Pinturas",
+  url: "https://www.luizpinturas.com/",
+  serviceType: "Pintura Residencial",
+  skills: "Especialistas em Pintura Residencial",
+  telephone: "+55 11 99586-1460",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Rua Nelson Francisco de Almeida, 126",
+    addressLocality: "Mairiporã",
+    addressRegion: "SP",
+    postalCode: "07662-690",
+    addressCountry: "BR",
+  },
+  areaServed: [
+    { "@type": "Place", name: "Atibaia" },
+    { "@type": "Place", name: "Mairiporã" },
+    { "@type": "Place", name: "Bragança Paulista" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -55,6 +78,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <body className={inter.className}>{children}</body>
     </html>
   );
