@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,6 +72,30 @@ const jsonLd = {
   ],
 };
 
+const MEASUREMENT_ID = "G-D273CZTE75";
+
+function GoogleAnalytics() {
+  return (
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}
+      />
+
+      <Script id="" strategy="lazyOnload">
+        {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+              });
+          `}
+      </Script>
+    </>
+  );
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -78,6 +103,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <GoogleAnalytics />
+      </head>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
